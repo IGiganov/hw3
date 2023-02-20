@@ -36,21 +36,21 @@ new_place = Place.find_by({ "name" => "Mexico City" })
 
 new_post = Post.new
 new_post["title"] = "Ate tacos"
-new_post["description"] = "Tacos was nice"
+new_post["description"] = "Long description - Tacos was nice"
 new_post["posted_on"] = "2022-01-01"
 new_post["place_id"] = new_place["id"]
 new_post.save
 
 new_post = Post.new
 new_post["title"] = "Lisa and Jim's Wedding"
-new_post["description"] = "Wedding was nice"
+new_post["description"] = "Long description - Wedding was nice"
 new_post["posted_on"] = "2022-01-01"
 new_post["place_id"] = new_place["id"]
 new_post.save
 
 new_post = Post.new
 new_post["title"] = "Ate tacos again"
-new_post["description"] = "Tacos was even nicer"
+new_post["description"] = "Long description - Tacos was even nicer"
 new_post["posted_on"] = "2022-01-01"
 new_post["place_id"] = new_place["id"]
 new_post.save
@@ -59,7 +59,7 @@ new_place = Place.find_by({ "name" => "Charleston" })
 
 new_post = Post.new
 new_post["title"] = "Ate Dave's Hot Chicken"
-new_post["description"] = "Chicken was nice"
+new_post["description"] = "Long description - Chicken was nice"
 new_post["posted_on"] = "2021-01-01"
 new_post["place_id"] = new_place["id"]
 new_post.save
@@ -68,7 +68,7 @@ new_place = Place.find_by({ "name" => "Beijing" })
 
 new_post = Post.new
 new_post["title"] = "Ate pho"
-new_post["description"] = "Pho was nice"
+new_post["description"] = "Long description - Pho was nice"
 new_post["posted_on"] = "2020-01-01"
 new_post["place_id"] = new_place["id"]
 new_post.save
@@ -77,7 +77,7 @@ new_place = Place.find_by({ "name" => "Amsterdam" })
 
 new_post = Post.new
 new_post["title"] = "Ate mushroom"
-new_post["description"] = "Mushroom was nice"
+new_post["description"] = "Long description - Mushroom was nice"
 new_post["posted_on"] = "2019-01-01"
 new_post["place_id"] = new_place["id"]
 new_post.save

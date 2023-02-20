@@ -2,7 +2,7 @@
 
 <p> </p>
 
-<% for post in @posts %>
+<% for post in @post %>
     
     <p> 
         <h3> <%= post["title"] %>  </h3>
@@ -16,5 +16,15 @@
 <% end %>
 
 <p> 
-    <a> New Post </a> 
+<p> 
+    <a href="/posts/new?id=<%= params["id"] %>"> <b>New Post</b> </a>
+</p>
+
+</p>
+
+<p> 
+<p> 
+    <a href="/places/"> <b>Back to Places</b> </a>
+</p>
+
 </p>

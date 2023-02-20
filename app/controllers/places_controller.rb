@@ -1,18 +1,23 @@
 class PlacesController < ApplicationController
     def index 
         @places = Place.all
-        
-        #render the file views/palces/index.html.erb
-        #@username = params["username"]
     end
 
     def show 
-        
         @place = Place.find_by({"id" => params["id"]})
-        @posts = Post.where({"place_id" =>  params["id"]})
+        @post = Post.where({"place_id" =>  params["id"]})
+    end
 
-        #render the file views/palces/index.html.erb
-        
+    def new
+        @place = Place.new
+    end
+
+
+    def create
+        @place = Place.new
+        @place["name"] = params["place"]["name"]
+        @place.save
+        redirect_to "/places/"
     end
 
 
